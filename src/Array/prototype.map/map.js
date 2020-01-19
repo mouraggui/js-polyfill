@@ -1,8 +1,11 @@
 module.exports = function (f) {
-  const arr = []
+  if (typeof f !== 'function') throw TypeError(`${f} is not a function`)
+
+  const result = []
+
   for (let i = 0; i < this.length; i++) {
-    let result = f(this[i], i, this)
-    arr.push(result)
+    result.push(f(this[i], i, this))
   }
-  return arr
+
+  return result
 }
