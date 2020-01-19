@@ -1,4 +1,4 @@
-# :ferris_wheel: JavaScript Polyfills
+# :ferris_wheel: JavaScript Polyfill
 
 Repository dedicated to the creation of some polyfills of native JavaScript components.
 
