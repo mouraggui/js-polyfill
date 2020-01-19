@@ -1,0 +1,25 @@
+{
+  "name": "js-polyfills",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node \"node_modules/tape/bin/tape\" src/**/*.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mouraggui/js-polyfills.git"
+  },
+  "keywords": [],
+  "author": "Guilherme Moura <mouraggui@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mouraggui/js-polyfills/issues"
+  },
+  "homepage": "https://github.com/mouraggui/js-polyfills#readme",
+  "devDependencies": {
+    "sinon": "^8.1.0",
+    "tape": "^4.13.0",
+    "faucet": "0.0.1"
+  }
+}
