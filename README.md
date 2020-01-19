@@ -4,4 +4,6 @@ Repository dedicated to the creation of some polyfills of native JavaScript meth
 
 ## Running tests
 
-```npm test```
+```
+npm test
+```
