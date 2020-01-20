@@ -1,5 +1,5 @@
-module.exports = function (f) {
+module.exports = function (callback) {
   for (let i = 0; i < this.length; i++) {
-    f(this[i], i, this)
+    callback(this[i], i, this)
   }
 }
