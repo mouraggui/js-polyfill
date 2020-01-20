@@ -1,10 +1,12 @@
-module.exports = function (f) {
-  if (typeof f !== 'function') throw TypeError(`${f} is not a function`)
-
+module.exports = function (callback, thisArg) {
+  if (typeof callback !== 'function') {
+    throw TypeError(`${callback} is not a function`)
+  }
+  
   const result = []
-
+  
   for (let i = 0; i < this.length; i++) {
-    result.push(f(this[i], i, this))
+    result.push(callback.call(thisArg, this[i], i, this))
   }
 
   return result
