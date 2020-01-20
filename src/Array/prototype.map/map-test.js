@@ -77,3 +77,25 @@ test('Array.prototype.map: Calling the function without parameters', assert => {
 
   assert.end()
 })
+
+test('Array.prototype.map: Passing an arrayLike', assert => {
+  const colors = { 0: 'red', 1: 'blue', length: 2 }
+
+  const result = map.call(colors, item => item)
+  
+  assert.assert(Array.isArray(result))
+  assert.equal(result.length, 2)
+  assert.deepEqual(result, ['red', 'blue'])
+  assert.end()
+})
+
+test('Array.prototype.map: Passing a common object', assert => {
+  const colors = { color1: 'red', color2: 'blue', length: 2 }
+
+  const result = map.call(colors, item => item)
+  
+  assert.assert(Array.isArray(result))
+  assert.equal(result.length, 2)
+  assert.deepEqual(result, new Array(2))
+  assert.end()
+})
