@@ -3,7 +3,7 @@ module.exports = function (callback, thisArg) {
     throw TypeError(`${callback} is not a function`)
   }
   
-  for (let i = 0; i < this.length; i++) {
+  for (var i = 0; i < this.length; i++) {
     if (!this[i]) continue;
     
     callback.call(thisArg, this[i], i, this)
