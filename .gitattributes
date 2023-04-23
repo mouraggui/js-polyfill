@@ -1,1 +1,1 @@
-*.js linguist-detectable=true
+src/core/* linguist-vendored
