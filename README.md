@@ -23,7 +23,7 @@ yarn install
 npm test
 ```
 
-#### License
+### License
 
 [MIT](https://github.com/glhrmoura/js-polyfill/blob/master/LICENSE)
 
