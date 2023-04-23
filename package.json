@@ -1,14 +1,15 @@
 {
   "name": "js-polyfills",
   "version": "1.0.0",
-  "description": "Repository dedicated to the creation of some polyfills of native JavaScript components.",
   "author": "Guilherme Moura <mouraggui@gmail.com>",
+  "description": "Repository dedicated to the creation of some polyfills of native JavaScript components.",
   "license": "MIT",
   "scripts": {
     "test": "tape src/**/*.js | faucet"
   },
   "devDependencies": {
     "faucet": "0.0.4",
-    "tape": "^4.16.2"
+    "tape": "^4.16.2",
+    "eslint": "^8.39.0"
   }
 }
