@@ -20,7 +20,7 @@ yarn install
 #### Run tests
 
 ```
-npm test
+yarn test
 ```
 
 ### License
