@@ -7,6 +7,6 @@ module.exports = function (callback) {
       arr.push(this[i])
     }
   }
-  
+
   return arr
 }

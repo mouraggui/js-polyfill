@@ -5,7 +5,7 @@ test('Array.prototype.map: Multiplying each value of the array by 2', assert => 
   const numbers = [2, 4, 6, 8, 10]
 
   const result = map.call(numbers, item => item * 2)
-  
+
   assert.assert(Array.isArray(result))
   assert.equal(result.length, 5)
   assert.deepEqual(result, [4, 8, 12, 16, 20])
@@ -16,7 +16,7 @@ test('Array.prototype.map: Squared each value of the array', assert => {
   const numbers = [2, 4, 6, 8, 10]
 
   const result = map.call(numbers, item => item ** 2)
-  
+
   assert.assert(Array.isArray(result))
   assert.equal(result.length, 5)
   assert.deepEqual(result, [4, 16, 36, 64, 100])
@@ -27,7 +27,7 @@ test('Array.prototype.map: Calling function passing a callback without behavior'
   const numbers = [1, 2]
 
   const result = map.call(numbers, () => {})
-  
+
   assert.assert(Array.isArray(result))
   assert.equal(result.length, 2)
   assert.deepEqual(result, [undefined, undefined])
@@ -38,7 +38,7 @@ test('Array.prototype.map: Passing thisArg as a parameter with a function expres
   const numbers = [1]
 
   const result = map.call(numbers, function () { return this }, { name: 'Guilherme' })
-  
+
   assert.assert(Array.isArray(result))
   assert.equal(result.length, 1)
   assert.deepEqual(result, [{ name: 'Guilherme' }])
@@ -49,7 +49,7 @@ test('Array.prototype.map: Passing thisArg as a parameter with an arrow function
   const numbers = [1]
 
   const result = map.call(numbers, () => this, { name: 'Guilherme' })
-  
+
   assert.assert(Array.isArray(result))
   assert.equal(result.length, 1)
   assert.deepEqual(result, [module.exports])
@@ -82,7 +82,7 @@ test('Array.prototype.map: Passing an arrayLike', assert => {
   const colors = { 0: 'red', 1: 'blue', length: 2 }
 
   const result = map.call(colors, item => item)
-  
+
   assert.assert(Array.isArray(result))
   assert.equal(result.length, 2)
   assert.deepEqual(result, ['red', 'blue'])
@@ -93,7 +93,7 @@ test('Array.prototype.map: Passing a common object', assert => {
   const colors = { color1: 'red', color2: 'blue', length: 2 }
 
   const result = map.call(colors, item => item)
-  
+
   assert.assert(Array.isArray(result))
   assert.equal(result.length, 2)
   assert.deepEqual(result, new Array(2))

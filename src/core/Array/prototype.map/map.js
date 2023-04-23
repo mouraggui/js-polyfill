@@ -4,7 +4,7 @@ module.exports = function (callback, thisArg) {
   }
 
   var resultArr = new Array(this.length)
-  
+
   for (var i = 0; i < this.length; i++) {
     if (this[i] === undefined) continue
 
