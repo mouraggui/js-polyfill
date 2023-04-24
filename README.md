@@ -17,7 +17,7 @@ Repository dedicated to the creation of some polyfills of native JavaScript comp
 yarn install
 ```
 
-#### Run tests
+#### Tests
 
 ```
 yarn test
