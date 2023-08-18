@@ -9,20 +9,6 @@
 
 Repository dedicated to the creation of some polyfills of native JavaScript components.
 
-### Setup
-
-#### Install
-
-```
-yarn install
-```
-
-#### Tests
-
-```
-yarn test
-```
-
 ### License
 
 [MIT](https://github.com/glhrmoura/js-polyfill/blob/master/LICENSE)
