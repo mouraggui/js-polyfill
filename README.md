@@ -1,7 +1,7 @@
 <p align="center">
   <img
     style="object: contain; height: 150px"
-    src="https://raw.githubusercontent.com/glhrmoura/js-polyfill/master/src/images/logo.png"
+    src="https://i.imgur.com/9Hlz7QN.png"
   />
 </p>
 
